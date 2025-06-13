@@ -684,91 +684,25 @@ footer {
         transform: translateY(0);
     }
 }
-.glitch {
-  position: relative;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  animation: glitch-skew 1s infinite linear alternate-reverse;
+.cursor-click {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(1);
+  animation: clickPulse 0.4s ease-out forwards;
+  z-index: 9999;
 }
 
-.glitch::before,
-.glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-  background: black;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-}
-
-.glitch::before {
-  animation: glitch-anim 2s infinite linear alternate-reverse;
-  color: #f0f;
-}
-
-.glitch::after {
-  animation: glitch-anim2 2s infinite linear alternate-reverse;
-  color: #0ff;
-}
-
-@keyframes glitch-skew {
-  0% { transform: skew(0deg); }
-  100% { transform: skew(1deg); }
-}
-
-@keyframes glitch-anim {
+@keyframes clickPulse {
   0% {
-    clip: rect(42px, 9999px, 44px, 0);
-    transform: translate(-3px, -3px);
-  }
-  20% {
-    clip: rect(12px, 9999px, 15px, 0);
-    transform: translate(3px, 2px);
-  }
-  40% {
-    clip: rect(62px, 9999px, 65px, 0);
-    transform: translate(-1px, -1px);
-  }
-  60% {
-    clip: rect(32px, 9999px, 34px, 0);
-    transform: translate(2px, 3px);
-  }
-  80% {
-    clip: rect(22px, 9999px, 24px, 0);
-    transform: translate(-2px, 0);
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.5);
   }
   100% {
-    clip: rect(72px, 9999px, 74px, 0);
-    transform: translate(1px, -2px);
-  }
-}
-
-@keyframes glitch-anim2 {
-  0% {
-    clip: rect(12px, 9999px, 15px, 0);
-    transform: translate(2px, 3px);
-  }
-  20% {
-    clip: rect(42px, 9999px, 44px, 0);
-    transform: translate(-1px, -2px);
-  }
-  40% {
-    clip: rect(22px, 9999px, 24px, 0);
-    transform: translate(0, 2px);
-  }
-  60% {
-    clip: rect(62px, 9999px, 65px, 0);
-    transform: translate(-2px, 1px);
-  }
-  80% {
-    clip: rect(32px, 9999px, 34px, 0);
-    transform: translate(3px, 0);
-  }
-  100% {
-    clip: rect(72px, 9999px, 74px, 0);
-    transform: translate(-3px, -1px);
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2.5);
   }
 }
