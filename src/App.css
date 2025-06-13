@@ -232,7 +232,6 @@ nav {
     padding: 8px 15px;
     overflow: hidden;
     letter-spacing: -1px;
-    animation: neonGlow 4s ease-in-out infinite alternate;
 }
 
 .logo::before {
