@@ -399,7 +399,7 @@ section {
 }
 
 .hero-description {
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
     max-width: 700px;
     margin-bottom: 30px;
     line-height: 1.7;
@@ -1038,4 +1038,69 @@ footer::before {
     transform: translate(-50%, -50%) scale(2.5);
   }
 }
-
+html {
+    font-size: 16px; /* Ensure base font size */
+    scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+    * {
+        cursor: auto;
+    }
+    
+    .cursor-dot, .cursor-outline, .trail {
+        display: none;
+    }
+    
+    .container {
+        padding: 0 15px; /* Reduce padding on mobile */
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(18, 18, 18, 0.95);
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        border-bottom: 1px solid var(--primary-red);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem; /* Smaller on mobile */
+        letter-spacing: -1px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px; /* Reduce gap on mobile */
+    }
+    
+    .section-title {
+        font-size: 1.8rem; /* Smaller on mobile */
+    }
+    
+    .project-card {
+        transform: translateY(0);
+    }
+    
+    /* Add mobile-specific spacing fixes */
+    section {
+        padding: 80px 0; /* Reduce padding on mobile */
+    }
+    
+    .hero-content {
+        gap: 20px; /* Reduce gap on mobile */
+    }
+}

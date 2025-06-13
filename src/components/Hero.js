@@ -23,11 +23,14 @@ const Hero = () => {
             <ReactTyped
               strings={[
                 "Welcome to my digital forge.",
-                "I'm a full‑stack engineer architecting AI-native platforms—where React UIs meet FastAPI, vector search, and GPT‑powered reasoning.",
-                "Dive in, explore the systems I’ve built, and let’s create scalable intelligence together."
+                "I'm a full‑stack engineer designing AI-native systems where React, FastAPI, and GPT‑4 work in harmony.",
+                "I build intelligent platforms—from semantic search with FAISS to LangChain-powered document Q&A.",
+                "My systems serve real users, deliver sub-200ms inference, and scale without compromise.",
+                "Clean architecture. Testable code. Fast iteration. Pragmatic engineering at every level.",
+                "Explore my work—where LLMs meet production, and abstract ideas become performant, user-facing software."
               ]}
               typeSpeed={40}
-              backSpeed={20}
+              backSpeed={25}
               backDelay={2500}
               loop
               smartBackspace
