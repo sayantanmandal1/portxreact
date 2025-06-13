@@ -127,7 +127,9 @@ body {
     background: var(--gradient-dark);
     color: var(--text-color);
     overflow-x: hidden;
-    font-weight: 300;
+    min-height: 100vh;
+    font-size: 16px; /* Add base font size */
+    line-height: 1.6; /* Add base line height */
 }
 
 #background-canvas {
@@ -143,7 +145,7 @@ body {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 /* Enhanced Custom Cursor */
@@ -170,12 +172,11 @@ body {
     width: 40px;
     height: 40px;
     border: 2px solid var(--primary-red);
-    backdrop-filter: blur(10px);
-    background: rgba(227, 27, 35, 0.05);
+    transition: transform 0.15s ease;
 }
 
 .cursor-hover {
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(1.2);
     background: transparent;
     border: 1px solid var(--neon-red);
     box-shadow: 0 0 30px var(--neon-red);
@@ -1037,3 +1038,4 @@ footer::before {
     transform: translate(-50%, -50%) scale(2.5);
   }
 }
+
