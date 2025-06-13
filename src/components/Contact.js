@@ -26,7 +26,7 @@ const Contact = () => {
       target: "_blank"
     },
     {
-      href: "https://drive.google.com/file/d/1wdQg84B6FKS1mKsiYxvoJgkJuHjzmS1y/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/1e_zGr0Ld9mUR9C1HLHjMGN8aV77l1jcO/view?usp=sharing",
       icon: "fas fa-file-alt",
       text: "Resume",
       target: "_blank"
