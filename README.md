@@ -1,4 +1,4 @@
-# Sayantan Mandal Portfolio
+# My Portfolio
 
 A modern, interactive portfolio website built with React.js featuring Three.js animations, GSAP transitions, and a responsive design.
 
