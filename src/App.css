@@ -914,15 +914,11 @@ footer::before {
 }
 
 .loader-logo {
-    font-size: 80px;
-    font-weight: 800;
-    background: var(--gradient-red);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-bottom: 30px;
-    animation: float 2s ease-in-out infinite, neonGlow 2s ease-in-out infinite alternate;
-    letter-spacing: -2px;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--primary-red);
+    margin-bottom: 20px;
+    animation: float 2s ease-in-out infinite;
 }
 
 .loader-spinner {
