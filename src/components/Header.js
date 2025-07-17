@@ -63,9 +63,10 @@ const Header = () => {
           <a href="#" className="logo">SM</a>
           <div className={`nav-links ${isMenuOpen ? 'active' : ''}`} id="navLinks">
             <a href="#home" className="nav-link">Home</a>
+            <a href="#about" className="nav-link">About</a>
             <a href="#projects" className="nav-link">Projects</a>
             <a href="#contact" className="nav-link">Contact</a>
-            <a href="https://drive.google.com/file/d/1Mg6SCsESPXwZD0SsMfViHWUXUtvfVVvO/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>
+            <a href="https://drive.google.com/file/d/1e_zGr0Ld9mUR9C1HLHjMGN8aV77l1jcO/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>
           </div>
           <button className="mobile-menu-btn" id="mobileMenuBtn" onClick={toggleMobileMenu}>
             <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
